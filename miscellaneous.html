@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Miscellaneous</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Custom Tailwind colors for NYU Purple
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nyuPurple: {
+                            DEFAULT: '#57068c', // Main NYU purple
+                            light: '#7b3eab',  // Lighter shade for hover/accents
+                            dark: '#3d0460',   // Darker shade for backgrounds
+                            extraLight: '#e9dff0' // Very light for backgrounds
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-nyuPurple-dark text-white p-6 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-bold mb-4 md:mb-0">John Doe</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="index.html" class="hover:text-nyuPurple-light transition duration-300">Personal Information</a></li>
+                    <li><a href="research.html" class="hover:text-nyuPurple-light transition duration-300">Research</a></li>
+                    <li><a href="miscellaneous.html" class="hover:text-nyuPurple-light transition duration-300 font-bold">Miscellaneous</a></li>
+                    <li><a href="undergraduate.html" class="hover:text-nyuPurple-light transition duration-300">My Undergraduate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Miscellaneous Section -->
+    <section id="miscellaneous" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-semibold text-nyuPurple-DEFAULT mb-6 text-center">Miscellaneous</h2>
+        <div class="max-w-3xl mx-auto text-lg leading-relaxed">
+            <p class="mb-4">
+                Here you can add any other relevant information that doesn't fit into the main categories. This could include:
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-4">
+                <li>Awards and Honors</li>
+                <li>Teaching Experience</li>
+                <li>Volunteer Work</li>
+                <li>Personal Interests (e.g., photography, hiking, coding side projects)</li>
+                <li>Blog posts or short articles</li>
+            </ul>
+            <p class="mb-4">
+                For example, I enjoy exploring new programming languages in my free time and contributing to open-source projects. I'm also an avid reader of science fiction and enjoy hiking in national parks.
+            </p>
+            <p>
+                Feel free to customize this section to showcase your unique personality and experiences!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-nyuPurple-dark text-white p-6 mt-8 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+            <p class="text-sm mt-2">Last Updated: July 29, 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>
